@@ -36,7 +36,7 @@ jobs:
     steps:
       
       - name: Set xcode version
-      - uses: maxim-lobanov/setup-xcode@v1
+        uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
 
