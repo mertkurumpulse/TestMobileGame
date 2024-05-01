@@ -9,7 +9,6 @@ env:
 
 jobs:
  
-  jobs:
   buildForiOSPlatform:
     name: Build for iOS
     runs-on: ubuntu-latest
