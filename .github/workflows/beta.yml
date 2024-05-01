@@ -1,4 +1,4 @@
-name: Test Jobs
+name: iOS Beta Build
 
 on: workflow_dispatch
 
@@ -67,4 +67,8 @@ jobs:
           bundle install
           bundle exec fastlane ios beta
 
-      
+      - name: Cleanup to avoid storage limit
+        if: always()
+        uses: geekyeggo/delete-artifact@v2
+        with:
+          name: build-iOS 
