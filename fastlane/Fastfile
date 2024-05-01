@@ -51,12 +51,6 @@ platform :ios do
 
   desc "Create .ipa"
   lane :build do
-
-    cocoapods(
-      clean_install: true,
-      podfile: "#{ENV['IOS_BUILD_PATH']}/iOS/"
-    )
-
     setup_ci
 
     sync_certificates
@@ -79,7 +73,7 @@ platform :ios do
     )
 
     build_app( #alias: gym
-      workspace: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcworkspace",
+      project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       scheme: 'Unity-iPhone',
       xcargs: '-allowProvisioningUpdates'
     )
