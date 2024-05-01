@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>9.0</LangVersion>
+    <LangVersion>6</LangVersion>
     <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
     <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
     <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
@@ -17,7 +17,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -45,38 +45,167 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.20f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/DeleteGameObject.cs" />
-    <Compile Include="Assets/Scripts/HandIconMovement.cs" />
-    <Compile Include="Assets/Scripts/GameManager.cs" />
-    <Compile Include="Assets/Scripts/SettingMenu.cs" />
-    <Compile Include="Assets/Scripts/PlayerControl.cs" />
-    <Compile Include="Assets/Scripts/CameraMove.cs" />
-    <Compile Include="Assets/Scripts/GameBounds.cs" />
-    <Compile Include="Assets/Scripts/CameraShake.cs" />
-    <Compile Include="Assets/Scripts/GameVariables.cs" />
-    <Compile Include="Assets/Scripts/UIManager.cs" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcCursor.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveFormulaMath.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/PinManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/DitheringModel.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/GamePlayManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs" />
+    <Compile Include="Assets/Scripts/AdManager.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/PoolManager.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/RopeManager.cs" />
+    <Compile Include="Assets/Scripts/Constants.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/PostProcessingProfile.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcWithCursor.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveReferenceToPoint.cs" />
+    <Compile Include="Assets/MainScene/Scripts/GameManager.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/ExplosionManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/GrainComponent.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs" />
+    <Compile Include="Assets/MainScene/Scripts/LeaderboardManager.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/SoundManager.cs" />
+    <Compile Include="Assets/iOSHapticFeedback/Scripts/iOSHapticFeedbackAdvanced.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/PostProcessingModel.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets/GameScene/Scripts/ScoreScript.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurve.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveBaseMath.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcTriangulate2D.cs" />
+    <Compile Include="Assets/GameScene/Scripts/PerfectTurnImage.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/VignetteComponent.cs" />
+    <Compile Include="Assets/ToolScripts/SpriteAttributes.cs" />
+    <Compile Include="Assets/Scripts/AchievementManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGPpu.cs" />
+    <Compile Include="Assets/GameScene/Scripts/CustomPolygonCollider/CustomPolygonCollider2D.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/BackgroundManager.cs" />
+    <Compile Include="Assets/GameScene/Scripts/DriftTrailTimer.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Effects/TextEffects.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/PostProcessingContext.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/GrainModel.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveAdaptiveMath.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcCursorChangeLinear.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurvePointComponent.cs" />
+    <Compile Include="Assets/GameScene/Scripts/PointGainedScript.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/GameOverManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGReflectionAdapter.cs" />
+    <Compile Include="Assets/GameScene/Scripts/CoinScript.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/BloomModel.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/FogComponent.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/UserLutComponent.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/DitheringComponent.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/VignetteModel.cs" />
+    <Compile Include="Assets/MainScene/Scripts/MainSceneManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Effects/CameraEffects.cs" />
+    <Compile Include="Assets/GameScene/Scripts/HoldToTurnAnimation.cs" />
+    <Compile Include="Assets/Scripts/SettingsPanel.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcCursorObjectTranslate.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/PerfectBarManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Effects/CameraShake.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveCalculatorClosestPoint.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/UserLutModel.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Collectibles.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveSettings.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcSweep2D.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGPolylineSplitter.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveChangedArgs.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurvePoint.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/PostProcessingComponent.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcMath.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/FogModel.cs" />
+    <Compile Include="Assets/MainScene/Scripts/UnlockedMapScrollItem.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGTriangulator2D.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/FacebookManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/FxaaComponent.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcWithMath.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcCursorObjectScale.cs" />
+    <Compile Include="Assets/Scripts/MonoSingleton.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/RaceTrackManager.cs" />
+    <Compile Include="Assets/GameScene/Scripts/CustomPolygonCollider/VerticeGenerator.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/TaaComponent.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveFormulas.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcCursorObjectRotate.cs" />
+    <Compile Include="Assets/GameScene/Scripts/Managers/CarManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcSplitterPolyline.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcVisualizationLineRenderer.cs" />
+    <Compile Include="Assets/iOSHapticFeedback/Scripts/iOSHapticFeedback.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Cc/BGCcWithCursorObject.cs" />
+    <Compile Include="Assets/iOSHapticFeedback/Scripts/iOSHapticFeedbackExample.cs" />
+    <Compile Include="Assets/ToolScripts/ScrollManager.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurvePointGO.cs" />
+    <Compile Include="Assets/GameScene/Scripts/TrailScript.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs" />
+    <Compile Include="Assets/GameScene/Scripts/AchievementAnimation.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurvePointI.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurveMathI.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets/GameScene/Scripts/CollectedCoinAnimationScript.cs" />
+    <Compile Include="Assets/PostProcessing/Runtime/Components/BloomComponent.cs" />
+    <Compile Include="Assets/MainScene/Scripts/LockedMapScrollItem.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCc.cs" />
+    <Compile Include="Assets/BansheeGz/BGCurve/Scripts/Curve/BGCurvePointField.cs" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/ScreenSpaceReflection.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/GrainGen.shader" />
+    <None Include="Assets/PostProcessing/Editor Resources/Monitors/HistogramCompute.compute" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/FXAA3.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/EyeAdaptation.shader" />
+    <None Include="Assets/PostProcessing/Editor Resources/UI/CurveBackground.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/BuiltinDebugViews.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/EyeAdaptation.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/LutGen.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/EyeHistogram.compute" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/TAA.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.cginc" />
+    <None Include="Assets/PostProcessing/Editor Resources/Monitors/VectorscopeCompute.compute" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/ColorGrading.cginc" />
+    <None Include="Assets/PostProcessing/Editor Resources/Monitors/HistogramRender.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/UberSecondPass.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Bluenoise64/LICENSE.txt" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/ACES.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/MotionBlur.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.shader" />
+    <None Include="Assets/BansheeGz/BGCurve/readme.txt" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/FXAA.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/Tonemapping.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/Fog.shader" />
+    <None Include="Assets/PostProcessing/Editor Resources/Monitors/ParadeRender.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/MotionBlur.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/DiskKernels.cginc" />
+    <None Include="Assets/PostProcessing/Resources/Bluenoise64/COPYING.txt" />
+    <None Include="Assets/PostProcessing/Editor Resources/UI/Trackball.shader" />
+    <None Include="Assets/PostProcessing/Editor Resources/Monitors/WaveformRender.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/Common.cginc" />
+    <None Include="Assets/PostProcessing/Editor Resources/Monitors/VectorscopeRender.shader" />
+    <None Include="Assets/Resources/BillingMode.json" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/Bloom.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/Uber.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/DepthOfField.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/TAA.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/Blit.shader" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/Bloom.cginc" />
+    <None Include="Assets/PostProcessing/Editor Resources/Monitors/WaveformCompute.compute" />
+    <None Include="Assets/PostProcessing/Resources/Shaders/DepthOfField.cginc" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -317,11 +446,23 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/PackageCache/com.unity.analytics@3.8.1/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -707,20 +848,38 @@
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    <Reference Include="Unity.Services.Analytics.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Services.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
@@ -728,14 +887,41 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -743,41 +929,78 @@
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    <Reference Include="Analytics">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Analytics">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.Services.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>/Users/mertcan/Documents/Projects/TestMobileGame/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{7846e904-1630-861b-f5df-707c58d9359b}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
@@ -787,4 +1010,34 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

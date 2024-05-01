@@ -4,10 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Obstacles
-  - Ground
-  - deleteObject
-  - levelEnd
+  - Track
+  - Pin
+  - Car
+  - ExplosionObject
+  - Balancer
+  - ReleaseBalancer
+  - StartFinish
+  - Score
+  - CarGlow
+  - TurnText
+  - Collectibles
+  - Coin
+  - HoldToTurn
+  - PerfectTurnImage
   layers:
   - Default
   - TransparentFX
@@ -17,8 +27,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - StartGameLayer
+  - GameOverLayer
   - 
   - 
   - 
@@ -42,6 +52,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackgroundLayer
+    uniqueID: 2255855533
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: GamePlayLayer
+    uniqueID: 112466157
+    locked: 0
+  - name: StartGameLayer
+    uniqueID: 2862324931
+    locked: 0
+  - name: GameOverLayer
+    uniqueID: 2522644815
+    locked: 0
+  - name: GUI
+    uniqueID: 2178064705
     locked: 0
