@@ -34,6 +34,12 @@ jobs:
     runs-on: macos-latest
     needs: buildForiOSPlatform
     steps:
+      
+      - name: Set xcode version
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -66,7 +72,7 @@ jobs:
           find $IOS_BUILD_PATH -type f -name "**.sh" -exec chmod +x {} \;
           bundle install
           bundle exec fastlane ios release
-          
+
       - name: Cleanup to avoid storage limit
         if: always()
         uses: geekyeggo/delete-artifact@v2

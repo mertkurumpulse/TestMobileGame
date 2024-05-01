@@ -34,6 +34,11 @@ jobs:
     runs-on: macos-latest
     needs: buildForiOSPlatform
     steps:
+      - name: Set xcode version
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
